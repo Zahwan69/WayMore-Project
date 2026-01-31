@@ -18,14 +18,11 @@ git add .
 git commit -m "Initial commit: Project structure"
 ```
 
-## Step 2: Create Backend and Frontend Branches
+## Step 2: Create Backend and Frontend Branches (Locally)
 
 ```bash
 # Create and switch to backend branch
 git checkout -b backend
-
-# Push backend branch to GitHub (after creating repo)
-git push -u origin backend
 
 # Switch back to main
 git checkout main
@@ -33,8 +30,8 @@ git checkout main
 # Create and switch to frontend branch
 git checkout -b frontend
 
-# Push frontend branch to GitHub
-git push -u origin frontend
+# Switch back to main (we'll push from here)
+git checkout main
 ```
 
 ## Step 3: Create GitHub Repository
@@ -45,7 +42,7 @@ git push -u origin frontend
 4. **Don't** initialize with README, .gitignore, or license (we already have files)
 5. Click **Create repository**
 
-## Step 4: Connect Local Repository to GitHub
+## Step 4: Connect Local Repository to GitHub and Push All Branches
 
 ```bash
 # Add GitHub remote (replace YOUR_USERNAME with your GitHub username)
